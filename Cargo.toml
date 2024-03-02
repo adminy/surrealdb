@@ -9,12 +9,14 @@ authors = ["Tobie Morgan Hitchcock <tobie@surrealdb.com>"]
 [features]
 # Public features
 default = [
+    "storage-dynamodb",
     "storage-mem",
     "storage-surrealkv",
     "storage-rocksdb",
     "scripting",
     "http",
 ]
+storage-dynamodb = ["surrealdb/kv-dynamodb"]
 storage-mem = ["surrealdb/kv-mem"]
 storage-rocksdb = ["surrealdb/kv-rocksdb"]
 storage-tikv = ["surrealdb/kv-tikv"]

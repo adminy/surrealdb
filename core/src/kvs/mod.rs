@@ -10,6 +10,7 @@
 //! - `indxdb`: WASM based database to store data in the browser
 //! - `rocksdb`: [RocksDB](https://github.com/facebook/rocksdb) an embeddable persistent key-value store for fast storage
 //! - `tikv`: [TiKV](https://github.com/tikv/tikv) a distributed, and transactional key-value database
+//! - `dynamodb`: [DynamoDb](https://aws.amazon.com/dynamodb/) a Serverless, NoSQL, fully managed database with single-digit millisecond performance at any scale
 //! - `mem`: in-memory database
 
 mod api;
@@ -32,6 +33,7 @@ mod mem;
 mod rocksdb;
 mod surrealkv;
 mod tikv;
+mod dynamodb;
 
 #[cfg(test)]
 mod tests;
